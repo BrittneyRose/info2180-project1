@@ -2,10 +2,133 @@
 body {
     margin: 0;
     font-size: 16px;
+
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(10px, 1fr);
+    grid-template-rows: repeat(8, minmax(5px, auto)); 
 }
+
+header{
+    background-color: white;
+    font-size: 18px;
+    grid-row: span;
+}
+
+nav{
+    grid-column: 4/6;
+    grid-row: 1;
+}
+
+h1{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px;
+
+}
+
+li {
+    display: inline;
+}
+li a{
+    color: #6b7280;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #5A67D8;
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+    grid-row: 2;
+}
+
+.overview-hero-text{
+    padding-top: 20px;
+    grid-row: 2;
+    grid-column: 3/5;
+    
+}
+
+.overview-hero-image{
+    grid-row: 2;
+    grid-column: 1/3;
+      
+}
+
+.overview-hero-image img{
+    padding-left: 40px;
+    padding-top: 10px;
+    width: 350px;
+    height: 150px;
+   
+}
+
+/* Learn about section */
+.learn-about h2{
+    color: #48BB78;
+    font-size: 24px;
+
+    grid-row: 3;
+    grid-column: 1;
+}
+
+
+.cards{
+    display: grid;
+    grid-row: 4;
+    grid-template-columns: repeat(3, minmax(300px, auto));
+    grid-gap: 30px;
+}
+
+.cards img{
+    padding-left: 30px;
+    width: 250px;
+    height: 200px;
+}
+.card:nth-of-type(1){
+
+    grid-column: 1;
+
+    border-radius: 5px;
+    border-color: #E2E8F0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+.card:nth-of-type(2){
+
+    grid-column: 2;
+
+    border-radius: 5px;
+    border-color: #E2E8F0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+.card:nth-of-type(3){
+
+    grid-column: 3;
+
+    border-radius: 5px;
+    border-color: #E2E8F0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card-body h3{
+    color: #48BB78;
+    font: 21px;
+    padding: 10px;
+}
+
+.card-body p{
+    padding: 10px;
+}
+
+/* Covid-19 Testing Section */
+
