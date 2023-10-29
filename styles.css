@@ -21,6 +21,7 @@ header{
     background-color: white;
     font-size: 18px;
     grid-row: span;
+    
 }
 
 nav{
@@ -123,12 +124,45 @@ li a:hover{
 .card-body h3{
     color: #48BB78;
     font: 21px;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .card-body p{
-    padding: 10px;
+    padding-left: 10px;
 }
 
 /* Covid-19 Testing Section */
 
+.testing{
+    background-color: #4A5568;
+    /* grid-template-columns: 40% 20% 40%; */
+    grid-row: 5;
+    
+}
+
+.testing-desciption {
+    color: white;
+    grid-column: 2; 
+   
+
+}
+
+
+.cta{
+      
+    grid-column: 3;
+    /* padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 80px; */
+    padding: 70px 100px 50px 100px;
+
+}   
+
+.testing .btn{
+    background-color: #48BB78;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 35px 10px 35px;
+    
+}
