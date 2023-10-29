@@ -135,7 +135,7 @@ li a:hover{
 
 .testing{
     background-color: #4A5568;
-    /* grid-template-columns: 40% 20% 40%; */
+
     grid-row: 5;
     padding: 40px;
     
@@ -152,9 +152,6 @@ li a:hover{
 .cta{
       
     grid-column: 3;
-    /* padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 80px; */
     padding: 70px 100px 50px 100px;
 
 }   
@@ -196,6 +193,7 @@ article:nth-of-type(1) img{
 
 article:nth-of-type(2){
     grid-row: 7; 
+    padding-bottom: 50px;
 }
 
 article:nth-of-type(2) img{
@@ -204,4 +202,59 @@ article:nth-of-type(2) img{
     height: 200px;
     border-radius: 100px;
     margin-right: 40px;
+}
+
+/* Newsletter */
+.newsletter{
+    grid-row: 8;
+    background-color: #48BB78;
+    color: white;
+    padding: 20px 400px 60px 400px ;
+    /* padding-right: 400px; */
+
+}
+
+.newsletter .container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+} 
+
+button{
+    background-color: #5A67D8;
+    color: white;
+    
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.form-group{
+    padding-right: 10px;
+}
+
+#email{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    
+    background-color: #4A5568;
+    color: white;
+
+    padding-top: 30px;
 }
